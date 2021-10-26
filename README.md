@@ -1,4 +1,5 @@
 # kube-config-example Project
+Quarkus project with kubernetes configmap and secret management
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
