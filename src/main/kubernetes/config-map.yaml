@@ -1,0 +1,55 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: kube-config-configmap
+  namespace: default
+  uid: 016f5cf7-0a6e-43b6-815f-ba718edeefae
+  resourceVersion: '897893'
+  creationTimestamp: '2021-10-26T09:11:31Z'
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: >
+      {"apiVersion":"v1","data":{"QUARKUS_LOG_FILE_ENABLE":"true","QUARKUS_LOG_FILE_FORMAT":"%d{HH:mm:ss}
+      %-5p [%c{2.}] (%t)
+      %s%e%n","QUARKUS_LOG_FILE_LEVEL":"INFO","QUARKUS_LOG_FILE_PATH":"/tmp/kube-cm.log","mycmpassword":"mypassword","mycmusername":"starred"},"kind":"ConfigMap","metadata":{"annotations":{},"creationTimestamp":"2021-04-22T13:12:43Z","managedFields":[{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:data":{".":{},"f:myenv":{}}},"manager":"kubectl-create","operation":"Update","time":"2021-04-22T13:12:43Z"},{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:data":{"f:QUARKUS_LOG_FILE_LEVEL":{},"f:myname":{}}},"manager":"kubectl-edit","operation":"Update","time":"2021-04-26T09:56:31Z"},{"apiVersion":"v1","fieldsType":"FieldsV1","fieldsV1":{"f:data":{"f:QUARKUS_LOG_FILE_ENABLE":{},"f:QUARKUS_LOG_FILE_FORMAT":{},"f:QUARKUS_LOG_FILE_PATH":{}}},"manager":"dashboard","operation":"Update","time":"2021-04-30T12:23:04Z"}],"name":"kube-config-configmap","namespace":"default","resourceVersion":"41024","uid":"d992d86f-c247-471d-8e31-53e9a1858b76"}}
+  managedFields:
+    - manager: kubectl-create
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-22T13:12:43Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          f:myenv: {}
+    - manager: kubectl-edit
+      operation: Update
+      apiVersion: v1
+      time: '2021-04-26T09:56:31Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          f:myname: {}
+    - manager: kubectl-client-side-apply
+      operation: Update
+      apiVersion: v1
+      time: '2021-10-26T09:11:31Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:data:
+          .: {}
+          f:QUARKUS_LOG_FILE_ENABLE: {}
+          f:QUARKUS_LOG_FILE_FORMAT: {}
+          f:QUARKUS_LOG_FILE_LEVEL: {}
+          f:QUARKUS_LOG_FILE_PATH: {}
+          f:mycmpassword: {}
+          f:mycmusername: {}
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:kubectl.kubernetes.io/last-applied-configuration: {}
+data:
+  QUARKUS_LOG_FILE_ENABLE: 'true'
+  QUARKUS_LOG_FILE_FORMAT: '%d{HH:mm:ss} %-5p [%c{2.}] (%t) %s%e%n'
+  QUARKUS_LOG_FILE_LEVEL: INFO
+  QUARKUS_LOG_FILE_PATH: /tmp/kube-cm.log
+  mycmpassword: mycmpassword
+  mycmusername: starred
